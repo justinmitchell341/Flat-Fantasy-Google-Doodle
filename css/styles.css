@@ -1,0 +1,60 @@
+/* Potential bend https://codepen.io/Grilly86/pen/jORbNm */
+#stage{
+  background-image: url("https://assets.codepen.io/6987263/backgroungImage.jpg");
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 345px;
+  overflow: visible;
+}
+
+.leftDropper{
+position: relative;
+top: 350px;
+}
+@keyframes headShake {
+  0% {
+    transform: translateX(0);
+  }
+
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+}
+.onLetGoString{
+  animation-duration: 2s;
+  animation-name: headShake;
+    animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.rightDropper,
+.rightDroplet,
+.leftDropper,
+.leftDroplet{
+opacity: 0;
+}
+.leftPotion,
+.rightPotion,
+.bow,
+.g,
+.sword,
+.shield
+{
+  cursor:pointer;
+}
+
